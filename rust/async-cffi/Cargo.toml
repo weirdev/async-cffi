@@ -1,0 +1,18 @@
+[package]
+name = "async-cffi"
+version = "0.1.0"
+edition = "2024"
+
+[lib]
+name = "async_cffi"
+crate-type = ["rlib"]
+
+[dependencies]
+futures = "0.3.31"
+
+[dev-dependencies]
+serial_test = "3.2.0"
+
+[dependencies.tokio]
+version = "1.41.1"
+features = ["macros", "rt-multi-thread"]
