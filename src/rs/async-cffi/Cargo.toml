@@ -1,9 +1,9 @@
 [package]
 name = "async-cffi"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2024"
 license = "MIT OR Apache-2.0"
-description = "Utility for creating global mockable objects."
+description = "Async/await compatible cffi scheme."
 repository = "https://github.com/weirdev/async-cffi"
 readme = "README.md"
 keywords = ["ffi", "cffi", "async", "await"]

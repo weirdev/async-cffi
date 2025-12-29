@@ -2,13 +2,19 @@
 name = "async-cffi-codegen"
 version = "0.1.0"
 edition = "2024"
+license = "MIT OR Apache-2.0"
+description = "Logic for generating CFFI bindings for asynchronous Rust code."
+repository = "https://github.com/weirdev/async-cffi"
+readme = "README.md"
+keywords = ["ffi", "cffi", "async", "await", "codegen"]
+categories = ["development-tools::ffi"]
 
 [lib]
 name = "async_cffi_codegen"
 crate-type = ["rlib"]
 
 [dependencies]
-async-cffi = "0.1.0"
+async-cffi = { version = "0.1.0", path = "../async-cffi" }
 rs-schema = "1.0.0"
 handlebars = "6.3.2"
 serde_json = "1.0.145"

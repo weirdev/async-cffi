@@ -1,6 +1,7 @@
 [workspace]
 members = [
     "async-cffi",
+    "async-cffi-codegen",
     "async-cffi-test-utils",
 ]
 resolver = "3"
