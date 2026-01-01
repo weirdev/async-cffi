@@ -319,7 +319,7 @@ fn interface_imports(trait_schema: &TraitSchema) -> Vec<String> {
         Vec::new()
     } else {
         vec![format!(
-            "from centconf.observer.core import {}",
+            "from n_observer.core import {}",
             interfaces.join(", ")
         )]
     }
@@ -1661,7 +1661,7 @@ mod tests {
         println!("publisher codegen:\n{}", code);
 
         assert!(
-            code.contains("from centconf.observer.core import IPublisher, IInnerObserverReceiver"),
+            code.contains("from n_observer.core import IPublisher, IInnerObserverReceiver"),
             "interface imports should include publisher and dependencies"
         );
         assert!(
@@ -1707,7 +1707,7 @@ mod tests {
 
         assert!(
             code.contains(
-                "from centconf.observer.core import IObservable, IPublisher, IInnerObserverReceiver"
+                "from n_observer.core import IObservable, IPublisher, IInnerObserverReceiver"
             ),
             "supertrait interface imports should be included for observable traits"
         );
